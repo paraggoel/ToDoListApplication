@@ -1,0 +1,37 @@
+<h1>
+  Add Todo Item:
+</h1>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-6">
+
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">New Item</h4>
+        </div>
+        <div class="card-body">
+
+          <div [hidden]="submitted" style="width: 300px;">
+            <form (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                <label for="description">Description</label> <input type="text"
+                                                                    class="form-control" id="description" required
+                                                                    [(ngModel)]="todo.description" name="description">
+              </div>
+
+              <div class="btn-group">
+                <button type="submit" class="btn btn-default">Add</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>

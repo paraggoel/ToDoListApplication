@@ -1,0 +1,71 @@
+<h1>
+  Pending Items:
+</h1>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col" *ngFor="let todo of pendings" [class.selected]="todo === selectedTodo" (click)="onSelect(todo)">
+
+      <div class="card" style="width: 20rem;">
+        <div class="card-header">
+          <button type="button" class="btn btn-secondary float-right" (click)="delete(todo)"><i class="fa fa-times" aria-hidden="true"></i></button>
+          <h4 class="card-title">Item No: {{todo.id}}</h4>
+        </div>
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2">Description: </h6>
+          <h6 class="card-subtitle mb-2 text-muted">{{todo.description}}</h6>
+          <br/>
+          <p>
+            <label for="pending">Complete: </label>
+            <input id="pending" type="checkbox" [(ngModel)]="todo.completed" (change)="update(todo)"/>
+          </p>
+        </div>
+      </div>
+      <br/>
+
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<h1>
+  Completed Items:
+</h1>
+
+
+
+<div class="container">
+  <div class="row">
+
+    <div class="col" *ngFor="let todo of completeds" [class.selected]="todo === selectedTodo" (click)="onSelect(todo)">
+
+      <div class="card" style="width: 20rem;">
+        <div class="card-header">
+          <button type="button" class="btn btn-secondary float-right" (click)="delete(todo)"><i class="fa fa-times" aria-hidden="true"></i></button>
+          <h4 class="card-title">Item No: {{todo.id}}</h4>
+        </div>
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2">Description: </h6>
+          <h6 class="card-subtitle mb-2 text-muted">{{todo.description}}</h6>
+          <p>
+            <label for="complete">Complete: </label>
+            <input id="complete" type="checkbox" [(ngModel)]="todo.completed" (change)="update(todo)"/>
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+
+<br/>
+<hr/>
+
+<app-todo-create></app-todo-create>

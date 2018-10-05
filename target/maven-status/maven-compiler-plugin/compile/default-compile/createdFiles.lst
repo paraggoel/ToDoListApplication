@@ -1,0 +1,4 @@
+com\parag\todo\model\Todo.class
+com\parag\todo\ToDoListApplication.class
+com\parag\todo\controller\TodoController.class
+com\parag\todo\repository\TodoRepository.class

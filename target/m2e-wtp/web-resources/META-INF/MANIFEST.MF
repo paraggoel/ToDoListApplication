@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: ToDoListApplication
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: parag
+Implementation-Vendor-Id: com.parag
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/ToDoListApplication
+Created-By: Maven Integration for Eclipse
+

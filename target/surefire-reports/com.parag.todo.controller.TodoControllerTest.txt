@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: com.parag.todo.controller.TodoControllerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.008 s <<< FAILURE! - in com.parag.todo.controller.TodoControllerTest
+com.parag.todo.controller.TodoControllerTest.testGetAll()  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.parag.todo.controller.TodoController.getAll(TodoController.java:36)
+	at com.parag.todo.controller.TodoControllerTest.testGetAll(TodoControllerTest.java:61)
+
+com.parag.todo.controller.TodoControllerTest.testGetComplete()  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.parag.todo.controller.TodoController.getComplete(TodoController.java:57)
+	at com.parag.todo.controller.TodoControllerTest.testGetComplete(TodoControllerTest.java:70)
+
+com.parag.todo.controller.TodoControllerTest.testGetPending()  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.parag.todo.controller.TodoController.getPending(TodoController.java:65)
+	at com.parag.todo.controller.TodoControllerTest.testGetPending(TodoControllerTest.java:79)
+
